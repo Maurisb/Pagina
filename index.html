@@ -11,7 +11,15 @@
 <body class="Fondo">
     <div class="container-fluid">
         <header class="rotulo">
-        <img src="./Imagenes/Header Ladrillos.jpg" alt="Ladrillos">
+        <img id="imagenPrincipal" src="./Imagenes/Header Ladrillos.jpg" alt="Ladrillos">
+        <script>
+            function cambiarImagenPrincipal() {
+                console.log("Función cambiarImagenPrincipal llamada");
+                var imagen = document.getElementById("imagenPrincipal");
+                imagen.src = './Imagenes/melman.jpg';
+            }
+            document.getElementById("imagenPrincipal").addEventListener("click", cambiarImagenPrincipal);
+        </script>
         <div>
             <nav>
                 <ul>
@@ -81,8 +89,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <div id="contenido">
-    <footer>
-        <p>
+    <footer class="pitogrande">
+        <p class="tamaño">
         todos los derechos reservados a mauricio ramirez inc
         </p>
     </footer>
